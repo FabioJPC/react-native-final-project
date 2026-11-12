@@ -1,56 +1,58 @@
-# Welcome to your Expo app 👋
+# Caderneta
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Aluno:** Fabio Cordeiro
 
-## Get started
+## Descrição
 
-1. Install dependencies
+Aplicativo para professores organizarem suas turmas: cada turma tem seus alunos e suas atividades, e o professor lança a nota de cada aluno em cada atividade. Os dados ficam salvos no próprio celular (AsyncStorage).
 
-   ```bash
-   npm install
-   ```
+Desenvolvido com React Native e Expo como projeto final da disciplina de Framework para Desenvolvimento para Dispositivos Móveis.
 
-2. Start the app
+## Telas
 
-   ```bash
-   npx expo start
-   ```
+1. **Atividades** (aba): atividades da turma selecionada, com data, quantas notas foram lançadas e a média da turma.
+2. **Nova/Editar atividade**: formulário com título, data e nota máxima, com validação dos campos.
+3. **Detalhes da atividade**: resumo (média, maior e menor nota) e lista de alunos da turma; tocar em um aluno abre a janela para lançar a nota.
+4. **Alunos** (aba): alunos da turma selecionada, com a média geral de cada um.
+5. **Novo/Editar aluno**: formulário com nome e matrícula (a matrícula não pode se repetir na mesma turma).
+6. **Boletim do aluno**: média geral (de 0 a 10) e a nota do aluno em cada atividade da turma.
+7. **Turmas** (aba): lista das turmas com a quantidade de alunos e atividades de cada uma.
+8. **Nova/Editar turma**: formulário com o nome da turma e opção de excluí-la.
 
-In the output, you'll find options to open the app in a
+Nas abas Atividades e Alunos, a turma é escolhida pelos botões no topo da tela. O app acompanha o tema claro/escuro do celular.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Tecnologias
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- React Native + Expo (SDK 58)
+- Expo Router (navegação por abas e pilha)
+- AsyncStorage (persistência local)
+- TypeScript
 
-## Get a fresh project
+## Como rodar
 
-When you're ready, run:
+Pré-requisitos: Node.js instalado e o app **Expo Go** no celular (ou um emulador Android/iOS).
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+Depois, escaneie o QR code exibido no terminal com o Expo Go (Android) ou com a câmera (iOS).
 
-### Other setup steps
+## Estrutura de pastas
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+```
+src/
+  app/          # telas e navegação (Expo Router)
+  components/   # componentes reutilizáveis (Button, Input, Card...)
+  constants/    # tema: cores, espaçamentos, fontes
+  context/      # estado global dos dados + AsyncStorage
+  data/         # dados de exemplo (botão na aba Turmas quando o app está vazio)
+  hooks/        # useTheme (cores do tema claro/escuro)
+  types/        # tipos Turma, Aluno e Atividade
+  utils/        # funções auxiliares (notas, datas, ids)
+```
 
-## Learn more
+## Prints
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+> Em breve.
