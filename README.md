@@ -55,4 +55,21 @@ src/
 
 ## Prints
 
-> Em breve.
+<table>
+  <tr>
+    <td align="center"><img src="screenshots/01-atividades.png" width="240" alt="Lista de atividades"><br>Atividades</td>
+    <td align="center"><img src="screenshots/02-detalhes-atividade.png" width="240" alt="Detalhes da atividade"><br>Detalhes da atividade</td>
+    <td align="center"><img src="screenshots/03-lancar-nota.png" width="240" alt="Janela para lançar a nota"><br>Lançar nota</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/04-alunos.png" width="240" alt="Lista de alunos"><br>Alunos</td>
+    <td align="center"><img src="screenshots/05-boletim.png" width="240" alt="Boletim do aluno"><br>Boletim do aluno</td>
+    <td align="center"><img src="screenshots/06-turmas.png" width="240" alt="Lista de turmas"><br>Turmas</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/07-nova-atividade.png" width="240" alt="Formulário de nova atividade"><br>Nova atividade</td>
+    <td align="center"><img src="screenshots/08-novo-aluno.png" width="240" alt="Formulário de novo aluno"><br>Novo aluno</td>
+    <td align="center"><img src="screenshots/09-nova-turma.png" width="240" alt="Formulário de nova turma"><br>Nova turma</td>
+  </tr>
+</table>
+
